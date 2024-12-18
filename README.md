@@ -56,7 +56,7 @@ Use predefined roles and permissions or create custom ones via the admin UI.
 Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the Apache-2.0 license.
 
 ## Acknowledgments
 - Laravel
