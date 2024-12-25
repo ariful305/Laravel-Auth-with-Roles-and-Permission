@@ -23,7 +23,7 @@
 <div class="container-fluid">
 
     {{-- <iframe src="/laravel-filemanager" style="width: 100%; height: 500px; overflow: hidden; border: none;"></iframe> --}}
-    <iframe src="{{ route('unisharp.lfm.show') }}" style="width: 100%; height: 500px; overflow: hidden; border: none;"></iframe>
+    <iframe src="{{ route('unisharp.lfm.show') }}" style="width: 100%; height: 750px; overflow: hidden; border: none;"></iframe>
 </div>
 
 @endsection
