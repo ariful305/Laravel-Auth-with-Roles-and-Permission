@@ -29,9 +29,8 @@ Follow these steps to set up the project:
    ```
 - **Install Dependencies**
   ```bash
-    composer install
-    npm install
-     ```
+    composer install   
+  ```
 - **Environment Setup**
   ```bash
      cp .env.example .env
@@ -47,6 +46,15 @@ Follow these steps to set up the project:
 
 Access the app in your browser at http://localhost:8000.
 
+##Admin Access
+
+- **Credentials**
+  ```bash
+    Email    =  admin@gmail.com
+    username =  admin
+    password =  admin123
+  ```
+
 ## Usage
 Visit the /login route to authenticate as a user.
 Admins can access the Role and Permission management dashboard.
@@ -61,6 +69,7 @@ This project is licensed under the Apache-2.0 license.
 ## Acknowledgments
 - Laravel
 - Spatie Laravel Permission
+- UniSharp laravel filemanager
 
 ## Contact
 If you have any questions or issues, feel free to open an issue.

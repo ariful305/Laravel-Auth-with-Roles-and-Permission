@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Role;
+use Illuminate\Support\Facades\Artisan;
 use Spatie\Permission\Models\Permission;
 
 class CreateAdminUserSeeder extends Seeder
@@ -22,7 +23,9 @@ class CreateAdminUserSeeder extends Seeder
         ]);
     
         $role = Role::create(['name' => 'admin']);
-     
+        
+        Artisan::call('permission:create-permission-routes');
+
         $permissions = Permission::pluck('id','id')->all();
    
         $role->syncPermissions($permissions);

@@ -21,11 +21,9 @@ use App\Http\Controllers\Admin\DashboardController;
 
 //Clear all cache
 Route::get('/clear', function () {
-    $exitCode = Artisan::call('cache:clear');
-    $exitCode = Artisan::call('config:clear');
-    $exitCode = Artisan::call('config:cache');
-    $exitCode = Artisan::call('view:clear');
-    return redirect()->back();
+   
+     Artisan::call('optimize:clear');
+     return redirect()->back()->with('success', 'Cache Cleared   Successfully');
 });
 
 Auth::routes();
