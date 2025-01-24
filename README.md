@@ -46,7 +46,7 @@ Follow these steps to set up the project:
 
 Access the app in your browser at http://localhost:8000.
 
-##Admin Access
+## Admin Access
 
 - **Credentials**
   ```bash
